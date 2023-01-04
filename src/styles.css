@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  /* #region  Color Pallete */
+  --primary-swatch            : #ff7373;
+  --saturated-primary-swatch  : #ff4141;
+  --main-contrast             : #73a1ff;
+  --secondary-swatch          : #fdd6d6;
+  --saturated-secondary-swatch: #fca1a1;
+  --neutral-swatch            : #e6e6e6;
+  --dark-neutral-swatch       : #333333;
+  --light-neutral-swatch      : #f5f5f5;
+  --text-color                : #333333;
+  --link-color                : #73a1ff;
+  /* #endregion */
+
+  /* #region  Animation speeds */
+  --faster-transition-speed: 50ms;
+  --fast-transition-speed  : 100ms;
+  --normal-transition-speed: 250ms;
+  --slow-transition-speed  : 500ms;
+  --slower-transition-speed: 750ms;
+  /* #endregion */
+}
+
+.spacer {
+  flex: 1;
+}
