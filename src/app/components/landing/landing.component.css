@@ -1,0 +1,19 @@
+.landing {
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}

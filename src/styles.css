@@ -21,7 +21,9 @@
   --slower-transition-speed: 750ms;
   /* #endregion */
 }
-
+body {
+  margin: 0;
+}
 .spacer {
   flex: 1;
 }
