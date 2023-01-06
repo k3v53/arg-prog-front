@@ -6,6 +6,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url('src/assets/img/clouds.svg');
+    background-repeat: no-repeat;
+    background-size: 75rem;
+    background-position-x: center;
+    background-position-y: 115%;
 }
 
 .row {
@@ -16,4 +21,13 @@
 .row {
   display: flex;
   flex-direction: column;
+}
+svg#clouds {
+  position: absolute;
+  overflow: hidden;
+  width: 1920px;
+  bottom: -160px;
+  left: -230px;
+  z-index: -10;
+  clip: rect();
 }
