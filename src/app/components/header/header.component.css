@@ -15,7 +15,9 @@
   transition: all var(--normal-transition-speed);
 }
 
-
+.toolbar>.title {
+  font-size: large;
+}
 
 .toolbar #twitter-logo {
   height: 40px;
@@ -40,12 +42,13 @@
   border-radius: 1rem;
   color: #fff;
   transition: all var(--normal-transition-speed);
-  padding: .25rem .5rem;
+  padding: .5rem 1rem;
+    font-weight: bold;
 }
 
 .toolbar button:hover {
   border-radius: .25rem;
-  padding: .5rem;
+  padding: 1rem;
   transform: translateY(-3px);
   box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
 }
