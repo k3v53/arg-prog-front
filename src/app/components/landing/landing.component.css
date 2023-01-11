@@ -1,26 +1,45 @@
-.landing {
-  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+h1,
+h2 {
   margin: 0;
-  width: 100vw;
-  height: 100vh;
+}
+
+.page {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+    margin: 0;
+    min-height: 100vh;
   background-image: url('src/assets/img/clouds.svg');
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
     background-size: 75rem;
     background-position-x: center;
     background-position-y: 115%;
 }
 
+.landing {
+  display: flex;
+  gap: 0;
+  justify-content: center;
+  align-items: center;
+}
 .row {
   display: flex;
   flex-direction: row;
 }
+.evenly {
+  justify-content: space-evenly;
+}
 
-.row {
+.column {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+    height: auto;
+  }
+  
+  .gap1 {
+    gap: 1rem;
 }
 svg#clouds {
   position: absolute;
@@ -30,4 +49,118 @@ svg#clouds {
   left: -230px;
   z-index: -10;
   clip: rect();
+}
+.profile {
+  display: flex;
+  gap: .5rem;
+  flex-direction: column;
+  background-color: var(--main-contrast);
+  color: white;
+  /* padding: 1rem; */
+  justify-content: center;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.profileHeader {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  padding: 1rem;
+  align-items: center;
+  text-align: center;
+}
+
+.profilePic {
+  width: 10rem;
+  border-radius: 50%;
+}
+
+.profileDetails {
+  flex: 1;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 0 0 0 1rem;
+}
+
+.profileDetails>h3 {
+  text-align: center;
+  margin: 0 0 1rem 0;
+  color: hsl(0, 0%, 25%);
+}
+
+.profileFramework {
+  width: 2rem;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+.terminal {
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 6px;
+  padding-top: 45px;
+  margin-top: 8px;
+  overflow: hidden;
+  background-color: rgb(15, 15, 16);
+}
+
+.terminal::before {
+  content: "\2022 \2022 \2022";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: rgb(58, 58, 58);
+  color: #c2c3c4;
+  width: 100%;
+  font-size: 2rem;
+  line-height: 0;
+  padding: 14px 0;
+  text-indent: 4px;
+}
+
+.terminal p {
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  color: white;
+  padding: 0 1rem 1rem;
+  margin: 0;
+  line-break: strict;
+
+}
+
+.simpleShadow {
+  box-shadow: 0 0 2rem 1rem rgba(0, 0, 0, 0.199);
+}
+
+.animatedContainer {
+  height: 8rem;
+  text-decoration: none;
+  color: gray;
+}
+
+.animatedIcon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.animatedContainer:hover>.animatedIcon {
+  animation-name: upAndDown;
+  animation-duration: 250ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes upAndDown {
+  0% {
+    bottom: 0px;
+  }
+
+  100% {
+    bottom: 25px;
+  }
 }

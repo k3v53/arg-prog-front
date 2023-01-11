@@ -13,6 +13,7 @@
   color: white;
   font-weight: 600;
   transition: all var(--normal-transition-speed);
+  z-index: 1;
 }
 
 .toolbar>.title {
@@ -56,4 +57,7 @@
 .toolbar button:active {
   transform: translateY(0px);
   box-shadow: 0 4px 2px rgba(0, 0, 0, 0.35);
+}
+.logo {
+  padding: 0 0.5rem 0 0;
 }
