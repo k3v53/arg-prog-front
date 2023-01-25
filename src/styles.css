@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
+  scroll-behavior: smooth;
   /* #region  Color Pallete */
   --primary-swatch            : #ff7373;
   --saturated-primary-swatch  : #ff4141;
@@ -21,6 +22,7 @@
   --slower-transition-speed: 750ms;
   /* #endregion */
 }
+
 body {
   margin: 0;
 }
