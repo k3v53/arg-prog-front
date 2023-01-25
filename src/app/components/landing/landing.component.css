@@ -153,14 +153,15 @@ svg#clouds {
   animation-duration: 250ms;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  transition: all ease 1s;
 }
 
 @keyframes upAndDown {
   0% {
-    bottom: 0px;
+    padding-bottom: 0px;
   }
 
   100% {
-    bottom: 25px;
+    padding-bottom: 25px;
   }
 }
