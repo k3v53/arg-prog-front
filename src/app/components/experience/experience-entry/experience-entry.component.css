@@ -1,0 +1,45 @@
+article {
+  max-width: 1000px;
+  display: flex;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+  margin: 1rem auto;
+  padding: 1rem;
+  align-items: center;
+  transition: all ease 250ms;
+  border-radius: .25rem;
+}
+
+article:hover {
+  box-shadow: 0 10px 35px rgba(149, 110, 255, 0.35);
+  border-radius: .5rem;
+  padding: 1.5rem;
+  margin: .5rem auto;
+}
+
+.verticalDivisor {
+  content: " ";
+  margin: 0.10rem 1rem;
+  width: 0;
+  height: 8rem;
+  border-left: solid .5px gray;
+}
+
+fa-icon.brandIcon {
+  font-size: 100px;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.expTitle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.expYear {
+  color: gray;
+  font-size: medium;
+  /* font-weight: normal; */
+}
