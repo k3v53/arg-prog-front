@@ -1,0 +1,37 @@
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: var(--dark-neutral-swatch);
+  margin: 0;
+  min-height: 2vh;
+  padding: .5rem 1rem;
+  box-shadow: inset 0 5px 10px 2px rgba(0, 0, 0, 0.25);
+}
+
+p {
+  color: var(--neutral-swatch);
+  margin: 0;
+}
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.social a {
+  border-radius: 1rem;
+  background-color: var(--neutral-swatch);
+  padding: .25rem;
+  color: var(--dark-neutral-swatch);
+  text-decoration: none;
+  transition: all 250ms ease;
+}
+
+.social>a:hover {
+  scale: 1.15;
+  box-shadow: 0 0 15px 2px white;
+  transform: translateY(-3px);
+}
