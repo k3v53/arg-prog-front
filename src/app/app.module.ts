@@ -11,6 +11,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { LandingComponent } from './components/landing/landing.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { SkillsEntryComponent } from './components/skills/skills-entry/skills-entry.component';
+import { LanguageEntryComponent } from './components/skills/language-entry/language-entry.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { SkillsEntryComponent } from './components/skills/skills-entry/skills-en
     EducationEntryComponent,
     SkillsComponent,
     SkillsEntryComponent,
+    LanguageEntryComponent,
   ],
   imports: [BrowserModule, FontAwesomeModule],
   providers: [],

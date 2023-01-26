@@ -28,6 +28,12 @@ h1 {
 }
 
 .techStack {
-  display: grid;
-  grid-template-columns: clamp(auto, auto, auto auto);
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+@media (max-width:1000px) {
+  .techStack {
+    flex-wrap: wrap;
+  }
 }
