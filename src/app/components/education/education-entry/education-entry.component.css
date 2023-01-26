@@ -7,6 +7,7 @@ article {
   align-items: center;
   transition: all ease 250ms;
   border-radius: .25rem;
+  background-color: white;
 }
 
 article:hover {

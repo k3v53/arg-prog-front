@@ -3,22 +3,19 @@ article {
   height: 150px;
   border: none 2px black;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
-  background: rgb(165, 165, 165);
-  padding: 2rem;
+  background: rgba(255, 255, 255, 0.25);
+    padding: 2rem;
   margin: 2rem auto;
   display: inline-block;
   border-radius: 350px 350px 3px 3px;
-  background: radial-gradient(ellipse at center,
-      rgba(184, 184, 184, 0) 60%,
-      rgba(241, 111, 92, 0.05) 97%,
-      rgba(255, 138, 79, .15) 100%);
+  margin: 0;
 }
 
 p {
   font-size: 30px;
   font-weight: bold;
   position: relative;
-  top: 140px;
+  top: 139px;
   bottom: 0;
   text-align: center;
   color: white;
@@ -35,7 +32,7 @@ p {
   position: relative;
   width: 350px;
   height: 4px;
-  rotate: 35deg;
+  rotate: 150deg;
   offset-rotate: auto 90deg;
   content: " ";
   background: red;
@@ -81,10 +78,10 @@ p {
 
 @keyframes arrowRotation {
   0% {
-    rotate: 0deg;
+    rotate: calc(attr(data-perc) - 10deg);
   }
 
   100% {
-    rotate: 165deg;
+    rotate: attr(data-perc);
   }
 }
