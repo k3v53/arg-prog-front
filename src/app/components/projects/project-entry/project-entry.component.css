@@ -1,6 +1,6 @@
 article {
-  border-radius: .25rem;
-  background-color: rgba(255, 255, 255, .85);
+  border-radius: 0.25rem;
+  background-color: rgba(255, 255, 255, 0.85);
   transition: border-radius 250ms ease;
   box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.25);
   max-width: 600px;
@@ -12,16 +12,16 @@ article {
   justify-content: space-between;
 }
 
-.header>span,
+.header > span,
 .chip {
   border-radius: 1rem;
   background-color: var(--primary-swatch);
-  padding: .25rem 1rem;
+  padding: 0.25rem 1rem;
   color: white;
   font-weight: bold;
 }
 
-.header>span {
+.header > span {
   background-color: green;
 }
 
@@ -36,15 +36,28 @@ article {
   padding: 1rem;
 }
 
-.details>h1 {
+.header > a {
+  font-size: x-large;
+  font-weight: bold;
   margin: 0;
+  text-decoration-line: underline;
+  text-decoration-color: transparent;
+  text-decoration-line: none;
+  transition: all 250ms ease;
+  text-shadow: 0 1px 0px rgba(0, 0, 0, 0.25);
+}
+
+.header > a:hover {
+  text-decoration-color: initial;
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+  transform: translateY(-3px);
 }
 
 img {
   width: 100%;
-  border-radius: .25rem .25rem 0 0;
+  border-radius: 0.25rem 0.25rem 0 0;
 }
-
 
 article:hover {
   border-radius: 1rem;
