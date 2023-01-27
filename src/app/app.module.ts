@@ -13,6 +13,8 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { SkillsEntryComponent } from './components/skills/skills-entry/skills-entry.component';
 import { LanguageEntryComponent } from './components/skills/language-entry/language-entry.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { ProjectEntryComponent } from './components/projects/project-entry/project-entry.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { FooterComponent } from './components/footer/footer.component';
     SkillsEntryComponent,
     LanguageEntryComponent,
     FooterComponent,
+    ProjectsComponent,
+    ProjectEntryComponent,
   ],
   imports: [BrowserModule, FontAwesomeModule],
   providers: [],
