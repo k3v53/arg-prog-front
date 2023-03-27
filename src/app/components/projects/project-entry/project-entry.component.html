@@ -1,31 +1,17 @@
 <article>
-<img src="https://plchldr.co/i/500x250?bg=111111" alt="plchldr.co">  <div class="details">
+  <img src="https://plchldr.co/i/500x250?bg=111111" alt="plchldr.co" />
+  <div class="details">
     <div class="header">
       <a target="_blank" href="https://kev.ar">
         {{ name }}
       </a>
       <span>Status</span>
     </div>
-<div class="chips" >
-  <p class="chip" *ngFor="let tech of techStack; let i=index">{{tech}}</p>
-</div>    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-      blanditiis libero debitis soluta laudantium perspiciatis fugiat rerum
-      voluptates ad? A, vitae? Sequi fuga quaerat qui facere, ut unde esse nisi
-      molestias deserunt enim quibusdam ducimus amet magni aliquam hic
-      consectetur. Laborum quidem error, consequuntur consequatur commodi
-      accusamus facilis temporibus in recusandae architecto aliquid nemo, cumque
-      excepturi mollitia, iure aperiam possimus adipisci! Doloremque aliquid
-      odio pariatur, saepe sunt expedita repellendus. Ab, ipsum. Autem libero
-      nemo enim earum quis reprehenderit? Deserunt facere ipsum, soluta ducimus
-      ab quae excepturi eum quidem explicabo magni animi iure earum autem?
-      Minima molestias, est alias excepturi debitis ut perferendis suscipit
-      dolorum. Quo, repudiandae. Libero, itaque culpa. Deserunt quis ad officia
-      nobis dicta laudantium, similique, asperiores quasi veritatis laboriosam
-      adipisci nulla, libero doloremque tenetur ratione aperiam voluptates
-      numquam. Non labore consectetur obcaecati tenetur quae omnis natus
-      adipisci provident eveniet fugiat minus earum ad dolor, consequatur ipsa
-      nulla neque!
-    </p>
+    <div class="chips">
+      <p class="chip" *ngFor="let tech of techStack; let i = index">
+        {{ tech }}
+      </p>
+    </div>
+    <p>{{ proyecto.descripcionPr }}</p>
   </div>
 </article>

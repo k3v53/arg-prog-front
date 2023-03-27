@@ -5,19 +5,14 @@
   <div class="row">
     <div class="column">
       <h2 class="expTitle">
-        <span>Empresa</span> <span>•</span> <span>Puesto</span>
+        <span>{{experience.empleador}}</span> <span>•</span> <span>{{experience.tituloEx}}</span>
 
         <div class="spacer"></div>
-        <span class="expYear">2002 <fa-icon [icon]="faArrowsLeftRight"></fa-icon> Ahora</span>
+        <span class="expYear">{{experience.fechaInicio}} <fa-icon [icon]="faArrowsLeftRight"></fa-icon> {{experience.fechaFin}}</span>
       </h2>
     </div>
     <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi
-      perferendis provident esse, numquam doloremque possimus qui quasi corporis
-      alias ratione placeat doloribus quo atque nihil quos deserunt culpa
-      dolores debitis officiis velit ut perspiciatis! Inventore mollitia ipsum
-      tempora sit dolor. Velit beatae ut inventore aut dolorum magnam fugit
-      facere commodi.
+     {{experience.descripcionEx}}
     </p>
   </div>
 </article>

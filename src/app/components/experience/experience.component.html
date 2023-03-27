@@ -1,6 +1,6 @@
 <section>
   <h1>Experiencia</h1>
-  <app-experience-entry></app-experience-entry>
-  <app-experience-entry></app-experience-entry>
-  <app-experience-entry></app-experience-entry>
+  <app-experience-entry *ngFor="let experience of experienciaArray" [experience]="experience"></app-experience-entry>
+    <button *ngIf="isLogged">Añadir nuevo</button>
+
 </section>

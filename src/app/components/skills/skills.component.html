@@ -1,41 +1,8 @@
 <section>
-  <div class="techStack">
-    <div class="skillset">
-      <h1>Languages</h1>
-      <div class="skillsContainer m0">
-        <div class="skillsContainer">
-          <app-language-entry name="Spanish" expertise="Native"></app-language-entry>
-          <app-language-entry name="English" expertise="Advanced"></app-language-entry>
-        </div>
-        <app-skills-entry></app-skills-entry>
-        <app-skills-entry></app-skills-entry>
-        <app-skills-entry></app-skills-entry>
-        <app-skills-entry></app-skills-entry>
-      </div>
-    </div>
-    <div class="skillset">
-      <h1>Frameworks</h1>
-      <div class="skillsContainer m0">
-        <app-skills-entry></app-skills-entry>
-        <app-skills-entry></app-skills-entry>
-        <app-skills-entry></app-skills-entry>
-        <app-skills-entry></app-skills-entry>
-      </div>
-    </div>
-  </div>
-  
-  <h1>Hard Skills</h1>
+  <h1>Skills</h1>
   <div class="skillsContainer">
-    <app-skills-entry></app-skills-entry>
-    <app-skills-entry></app-skills-entry>
-    <app-skills-entry></app-skills-entry>
-    <app-skills-entry></app-skills-entry>
+    <app-skills-entry *ngFor="let skill of skillArray" [skill]="skill"></app-skills-entry>
   </div>
-  <h1>Soft Skills</h1>
-  <div class="skillsContainer">
-    <app-skills-entry></app-skills-entry>
-    <app-skills-entry></app-skills-entry>
-    <app-skills-entry></app-skills-entry>
-    <app-skills-entry></app-skills-entry>
-  </div>
+
+  <button *ngIf="isLogged">Añadir nuevo</button>
 </section>

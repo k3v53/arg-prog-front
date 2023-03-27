@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "public": "dist/arg_prog_front_kevin_vicente",
+    "site": "arg-prog-kv",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

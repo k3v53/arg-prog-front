@@ -1,6 +1,5 @@
 <section>
   <h1>Educación</h1>
-  <app-education-entry></app-education-entry>
-  <app-education-entry></app-education-entry>
-  <app-education-entry></app-education-entry>
+  <app-education-entry *ngFor="let education of educacionArray" [education]="education"></app-education-entry>
+  <button *ngIf="isLogged">Añadir nuevo</button>
 </section>

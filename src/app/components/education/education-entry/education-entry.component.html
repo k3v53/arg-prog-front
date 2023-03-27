@@ -5,19 +5,17 @@
   <div class="row">
     <div class="column">
       <h2 class="expTitle">
-        <span>Institución Académica</span> <span>•</span> <span>Carrera o Tecnicatura</span>
+        <span>{{ education.institucion }}</span> <span>•</span>
+        <span>{{ education.tituloEd }}</span>
 
         <div class="spacer"></div>
-        <span class="expYear">2002 <fa-icon [icon]="faArrowsLeftRight"></fa-icon> Ahora</span>
+        <span class="expYear"
+          >{{ education.fechaInicio }}
+          <fa-icon [icon]="faArrowsLeftRight"></fa-icon>
+          {{ education.fechaFin }}</span
+        >
       </h2>
     </div>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi
-      perferendis provident esse, numquam doloremque possimus qui quasi corporis
-      alias ratione placeat doloribus quo atque nihil quos deserunt culpa
-      dolores debitis officiis velit ut perspiciatis! Inventore mollitia ipsum
-      tempora sit dolor. Velit beatae ut inventore aut dolorum magnam fugit
-      facere commodi.
-    </p>
+    <p>{{ education.descripcionEd }}</p>
   </div>
 </article>
